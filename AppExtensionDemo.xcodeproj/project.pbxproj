@@ -1,0 +1,1165 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6574E29923288D3700D2F377 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E29823288D3700D2F377 /* AppDelegate.m */; };
+		6574E29C23288D3700D2F377 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E29B23288D3700D2F377 /* ViewController.m */; };
+		6574E2A123288D3800D2F377 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6574E2A023288D3800D2F377 /* Assets.xcassets */; };
+		6574E2A723288D3800D2F377 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E2A623288D3800D2F377 /* main.m */; };
+		6574E2E02328937B00D2F377 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6574E2DF2328937B00D2F377 /* NotificationCenter.framework */; };
+		6574E2E42328937B00D2F377 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E2E32328937B00D2F377 /* TodayViewController.m */; };
+		6574E2EB2328937B00D2F377 /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6574E2DD2328937B00D2F377 /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6574E2F42328A37200D2F377 /* LWTodayExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E2F32328A37200D2F377 /* LWTodayExtensionViewController.m */; };
+		6574E2FD2328CB6A00D2F377 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E2FC2328CB6A00D2F377 /* ShareViewController.m */; };
+		6574E3042328CB6A00D2F377 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6574E2F92328CB6A00D2F377 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6574E3122328CF5E00D2F377 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3112328CF5E00D2F377 /* Media.xcassets */; };
+		6574E3152328CF5E00D2F377 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E3142328CF5E00D2F377 /* ActionViewController.m */; };
+		6574E3182328CF5E00D2F377 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3162328CF5E00D2F377 /* MainInterface.storyboard */; };
+		6574E31C2328CF5F00D2F377 /* ActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6574E30F2328CF5E00D2F377 /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6574E33C2328D31A00D2F377 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6574E33B2328D31A00D2F377 /* Stickers.xcassets */; };
+		6574E3402328D31A00D2F377 /* StickerPackExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6574E3392328D31900D2F377 /* StickerPackExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6574E34F2328EBB000D2F377 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E34E2328EBB000D2F377 /* NotificationService.m */; };
+		6574E3532328EBB000D2F377 /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6574E34B2328EBB000D2F377 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6574E35D2328EBD200D2F377 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6574E35C2328EBD200D2F377 /* UserNotifications.framework */; };
+		6574E35F2328EBD200D2F377 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6574E35E2328EBD200D2F377 /* UserNotificationsUI.framework */; };
+		6574E3632328EBD200D2F377 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E3622328EBD200D2F377 /* NotificationViewController.m */; };
+		6574E3662328EBD200D2F377 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3642328EBD200D2F377 /* MainInterface.storyboard */; };
+		6574E36A2328EBD200D2F377 /* NotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6574E35B2328EBD200D2F377 /* NotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6574E3702328F71900D2F377 /* LWNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574E36F2328F71900D2F377 /* LWNotificationViewController.m */; };
+		6574E3792328FDDD00D2F377 /* logo_img_02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3732328FDDC00D2F377 /* logo_img_02@3x.png */; };
+		6574E37A2328FDDD00D2F377 /* logo_img_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3742328FDDC00D2F377 /* logo_img_02@2x.png */; };
+		6574E37B2328FDDD00D2F377 /* sound01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3752328FDDC00D2F377 /* sound01.wav */; };
+		6574E37C2328FDDD00D2F377 /* sound02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3762328FDDC00D2F377 /* sound02.wav */; };
+		6574E37D2328FDDD00D2F377 /* logo_img_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3772328FDDC00D2F377 /* logo_img_01@2x.png */; };
+		6574E37E2328FDDD00D2F377 /* logo_img_01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3782328FDDC00D2F377 /* logo_img_01@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6574E2E92328937B00D2F377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6574E28C23288D3700D2F377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6574E2DC2328937B00D2F377;
+			remoteInfo = TodayExtension;
+		};
+		6574E3022328CB6A00D2F377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6574E28C23288D3700D2F377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6574E2F82328CB6A00D2F377;
+			remoteInfo = ShareExtension;
+		};
+		6574E31A2328CF5F00D2F377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6574E28C23288D3700D2F377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6574E30E2328CF5E00D2F377;
+			remoteInfo = ActionExtension;
+		};
+		6574E33E2328D31A00D2F377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6574E28C23288D3700D2F377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6574E3382328D31900D2F377;
+			remoteInfo = StickerPackExtension;
+		};
+		6574E3512328EBB000D2F377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6574E28C23288D3700D2F377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6574E34A2328EBB000D2F377;
+			remoteInfo = NotificationServiceExtension;
+		};
+		6574E3682328EBD200D2F377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6574E28C23288D3700D2F377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6574E35A2328EBD200D2F377;
+			remoteInfo = NotificationContentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6574E2EF2328937B00D2F377 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6574E3042328CB6A00D2F377 /* ShareExtension.appex in Embed App Extensions */,
+				6574E36A2328EBD200D2F377 /* NotificationContentExtension.appex in Embed App Extensions */,
+				6574E31C2328CF5F00D2F377 /* ActionExtension.appex in Embed App Extensions */,
+				6574E3532328EBB000D2F377 /* NotificationServiceExtension.appex in Embed App Extensions */,
+				6574E3402328D31A00D2F377 /* StickerPackExtension.appex in Embed App Extensions */,
+				6574E2EB2328937B00D2F377 /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6574E29423288D3700D2F377 /* AppExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6574E29723288D3700D2F377 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6574E29823288D3700D2F377 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6574E29A23288D3700D2F377 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6574E29B23288D3700D2F377 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6574E2A023288D3800D2F377 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6574E2A523288D3800D2F377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6574E2A623288D3800D2F377 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6574E2DD2328937B00D2F377 /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6574E2DF2328937B00D2F377 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6574E2E22328937B00D2F377 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		6574E2E32328937B00D2F377 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		6574E2E82328937B00D2F377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6574E2F023289E3100D2F377 /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayExtension.entitlements; sourceTree = "<group>"; };
+		6574E2F123289E3C00D2F377 /* AppExtensionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppExtensionDemo.entitlements; sourceTree = "<group>"; };
+		6574E2F22328A37200D2F377 /* LWTodayExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWTodayExtensionViewController.h; sourceTree = "<group>"; };
+		6574E2F32328A37200D2F377 /* LWTodayExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTodayExtensionViewController.m; sourceTree = "<group>"; };
+		6574E2F92328CB6A00D2F377 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6574E2FB2328CB6A00D2F377 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		6574E2FC2328CB6A00D2F377 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		6574E3012328CB6A00D2F377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6574E3082328CBFB00D2F377 /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		6574E30F2328CF5E00D2F377 /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6574E3112328CF5E00D2F377 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		6574E3132328CF5E00D2F377 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		6574E3142328CF5E00D2F377 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		6574E3172328CF5E00D2F377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6574E3192328CF5E00D2F377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6574E3252328D0CD00D2F377 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		6574E3392328D31900D2F377 /* StickerPackExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StickerPackExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6574E33B2328D31A00D2F377 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		6574E33D2328D31A00D2F377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6574E34B2328EBB000D2F377 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6574E34D2328EBB000D2F377 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		6574E34E2328EBB000D2F377 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		6574E3502328EBB000D2F377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6574E35B2328EBD200D2F377 /* NotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6574E35C2328EBD200D2F377 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		6574E35E2328EBD200D2F377 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		6574E3612328EBD200D2F377 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		6574E3622328EBD200D2F377 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		6574E3652328EBD200D2F377 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6574E3672328EBD200D2F377 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6574E36E2328F71900D2F377 /* LWNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNotificationViewController.h; sourceTree = "<group>"; };
+		6574E36F2328F71900D2F377 /* LWNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNotificationViewController.m; sourceTree = "<group>"; };
+		6574E3732328FDDC00D2F377 /* logo_img_02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_img_02@3x.png"; sourceTree = "<group>"; };
+		6574E3742328FDDC00D2F377 /* logo_img_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_img_02@2x.png"; sourceTree = "<group>"; };
+		6574E3752328FDDC00D2F377 /* sound01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound01.wav; sourceTree = "<group>"; };
+		6574E3762328FDDC00D2F377 /* sound02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound02.wav; sourceTree = "<group>"; };
+		6574E3772328FDDC00D2F377 /* logo_img_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_img_01@2x.png"; sourceTree = "<group>"; };
+		6574E3782328FDDC00D2F377 /* logo_img_01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_img_01@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6574E29123288D3700D2F377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E2DA2328937B00D2F377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E2E02328937B00D2F377 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E2F62328CB6A00D2F377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E30C2328CF5E00D2F377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E3482328EBB000D2F377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E3582328EBD200D2F377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E35F2328EBD200D2F377 /* UserNotificationsUI.framework in Frameworks */,
+				6574E35D2328EBD200D2F377 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6574E28B23288D3700D2F377 = {
+			isa = PBXGroup;
+			children = (
+				6574E29623288D3700D2F377 /* AppExtensionDemo */,
+				6574E2E12328937B00D2F377 /* TodayExtension */,
+				6574E2FA2328CB6A00D2F377 /* ShareExtension */,
+				6574E3102328CF5E00D2F377 /* ActionExtension */,
+				6574E33A2328D31900D2F377 /* StickerPackExtension */,
+				6574E34C2328EBB000D2F377 /* NotificationServiceExtension */,
+				6574E3602328EBD200D2F377 /* NotificationContentExtension */,
+				6574E2DE2328937B00D2F377 /* Frameworks */,
+				6574E29523288D3700D2F377 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6574E29523288D3700D2F377 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6574E29423288D3700D2F377 /* AppExtensionDemo.app */,
+				6574E2DD2328937B00D2F377 /* TodayExtension.appex */,
+				6574E2F92328CB6A00D2F377 /* ShareExtension.appex */,
+				6574E30F2328CF5E00D2F377 /* ActionExtension.appex */,
+				6574E3392328D31900D2F377 /* StickerPackExtension.appex */,
+				6574E34B2328EBB000D2F377 /* NotificationServiceExtension.appex */,
+				6574E35B2328EBD200D2F377 /* NotificationContentExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6574E29623288D3700D2F377 /* AppExtensionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6574E3722328FDDC00D2F377 /* Resources */,
+				6574E2F123289E3C00D2F377 /* AppExtensionDemo.entitlements */,
+				6574E29723288D3700D2F377 /* AppDelegate.h */,
+				6574E29823288D3700D2F377 /* AppDelegate.m */,
+				6574E2F22328A37200D2F377 /* LWTodayExtensionViewController.h */,
+				6574E2F32328A37200D2F377 /* LWTodayExtensionViewController.m */,
+				6574E29A23288D3700D2F377 /* ViewController.h */,
+				6574E29B23288D3700D2F377 /* ViewController.m */,
+				6574E36E2328F71900D2F377 /* LWNotificationViewController.h */,
+				6574E36F2328F71900D2F377 /* LWNotificationViewController.m */,
+				6574E2A023288D3800D2F377 /* Assets.xcassets */,
+				6574E2A523288D3800D2F377 /* Info.plist */,
+				6574E2A623288D3800D2F377 /* main.m */,
+			);
+			path = AppExtensionDemo;
+			sourceTree = "<group>";
+		};
+		6574E2DE2328937B00D2F377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6574E2DF2328937B00D2F377 /* NotificationCenter.framework */,
+				6574E3252328D0CD00D2F377 /* Messages.framework */,
+				6574E35C2328EBD200D2F377 /* UserNotifications.framework */,
+				6574E35E2328EBD200D2F377 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6574E2E12328937B00D2F377 /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6574E2F023289E3100D2F377 /* TodayExtension.entitlements */,
+				6574E2E22328937B00D2F377 /* TodayViewController.h */,
+				6574E2E32328937B00D2F377 /* TodayViewController.m */,
+				6574E2E82328937B00D2F377 /* Info.plist */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+		6574E2FA2328CB6A00D2F377 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6574E3082328CBFB00D2F377 /* ShareExtension.entitlements */,
+				6574E2FB2328CB6A00D2F377 /* ShareViewController.h */,
+				6574E2FC2328CB6A00D2F377 /* ShareViewController.m */,
+				6574E3012328CB6A00D2F377 /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		6574E3102328CF5E00D2F377 /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6574E3112328CF5E00D2F377 /* Media.xcassets */,
+				6574E3132328CF5E00D2F377 /* ActionViewController.h */,
+				6574E3142328CF5E00D2F377 /* ActionViewController.m */,
+				6574E3162328CF5E00D2F377 /* MainInterface.storyboard */,
+				6574E3192328CF5E00D2F377 /* Info.plist */,
+			);
+			path = ActionExtension;
+			sourceTree = "<group>";
+		};
+		6574E33A2328D31900D2F377 /* StickerPackExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6574E33B2328D31A00D2F377 /* Stickers.xcassets */,
+				6574E33D2328D31A00D2F377 /* Info.plist */,
+			);
+			path = StickerPackExtension;
+			sourceTree = "<group>";
+		};
+		6574E34C2328EBB000D2F377 /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6574E34D2328EBB000D2F377 /* NotificationService.h */,
+				6574E34E2328EBB000D2F377 /* NotificationService.m */,
+				6574E3502328EBB000D2F377 /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		6574E3602328EBD200D2F377 /* NotificationContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				6574E3612328EBD200D2F377 /* NotificationViewController.h */,
+				6574E3622328EBD200D2F377 /* NotificationViewController.m */,
+				6574E3642328EBD200D2F377 /* MainInterface.storyboard */,
+				6574E3672328EBD200D2F377 /* Info.plist */,
+			);
+			path = NotificationContentExtension;
+			sourceTree = "<group>";
+		};
+		6574E3722328FDDC00D2F377 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6574E3732328FDDC00D2F377 /* logo_img_02@3x.png */,
+				6574E3742328FDDC00D2F377 /* logo_img_02@2x.png */,
+				6574E3752328FDDC00D2F377 /* sound01.wav */,
+				6574E3762328FDDC00D2F377 /* sound02.wav */,
+				6574E3772328FDDC00D2F377 /* logo_img_01@2x.png */,
+				6574E3782328FDDC00D2F377 /* logo_img_01@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6574E29323288D3700D2F377 /* AppExtensionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6574E2AA23288D3800D2F377 /* Build configuration list for PBXNativeTarget "AppExtensionDemo" */;
+			buildPhases = (
+				6574E29023288D3700D2F377 /* Sources */,
+				6574E29123288D3700D2F377 /* Frameworks */,
+				6574E29223288D3700D2F377 /* Resources */,
+				6574E2EF2328937B00D2F377 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6574E2EA2328937B00D2F377 /* PBXTargetDependency */,
+				6574E3032328CB6A00D2F377 /* PBXTargetDependency */,
+				6574E31B2328CF5F00D2F377 /* PBXTargetDependency */,
+				6574E33F2328D31A00D2F377 /* PBXTargetDependency */,
+				6574E3522328EBB000D2F377 /* PBXTargetDependency */,
+				6574E3692328EBD200D2F377 /* PBXTargetDependency */,
+			);
+			name = AppExtensionDemo;
+			productName = AppExtensionDemo;
+			productReference = 6574E29423288D3700D2F377 /* AppExtensionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6574E2DC2328937B00D2F377 /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6574E2EC2328937B00D2F377 /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				6574E2D92328937B00D2F377 /* Sources */,
+				6574E2DA2328937B00D2F377 /* Frameworks */,
+				6574E2DB2328937B00D2F377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = 6574E2DD2328937B00D2F377 /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6574E2F82328CB6A00D2F377 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6574E3052328CB6A00D2F377 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				6574E2F52328CB6A00D2F377 /* Sources */,
+				6574E2F62328CB6A00D2F377 /* Frameworks */,
+				6574E2F72328CB6A00D2F377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 6574E2F92328CB6A00D2F377 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6574E30E2328CF5E00D2F377 /* ActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6574E31D2328CF5F00D2F377 /* Build configuration list for PBXNativeTarget "ActionExtension" */;
+			buildPhases = (
+				6574E30B2328CF5E00D2F377 /* Sources */,
+				6574E30C2328CF5E00D2F377 /* Frameworks */,
+				6574E30D2328CF5E00D2F377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExtension;
+			productName = ActionExtension;
+			productReference = 6574E30F2328CF5E00D2F377 /* ActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6574E3382328D31900D2F377 /* StickerPackExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6574E3412328D31A00D2F377 /* Build configuration list for PBXNativeTarget "StickerPackExtension" */;
+			buildPhases = (
+				6574E3372328D31900D2F377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickerPackExtension;
+			productName = StickerPackExtension;
+			productReference = 6574E3392328D31900D2F377 /* StickerPackExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+		6574E34A2328EBB000D2F377 /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6574E3542328EBB000D2F377 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				6574E3472328EBB000D2F377 /* Sources */,
+				6574E3482328EBB000D2F377 /* Frameworks */,
+				6574E3492328EBB000D2F377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = 6574E34B2328EBB000D2F377 /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6574E35A2328EBD200D2F377 /* NotificationContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6574E36B2328EBD200D2F377 /* Build configuration list for PBXNativeTarget "NotificationContentExtension" */;
+			buildPhases = (
+				6574E3572328EBD200D2F377 /* Sources */,
+				6574E3582328EBD200D2F377 /* Frameworks */,
+				6574E3592328EBD200D2F377 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationContentExtension;
+			productName = NotificationContentExtension;
+			productReference = 6574E35B2328EBD200D2F377 /* NotificationContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6574E28C23288D3700D2F377 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = linwei;
+				TargetAttributes = {
+					6574E29323288D3700D2F377 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6574E2DC2328937B00D2F377 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6574E2F82328CB6A00D2F377 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6574E30E2328CF5E00D2F377 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					6574E3382328D31900D2F377 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					6574E34A2328EBB000D2F377 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					6574E35A2328EBD200D2F377 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 6574E28F23288D3700D2F377 /* Build configuration list for PBXProject "AppExtensionDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6574E28B23288D3700D2F377;
+			productRefGroup = 6574E29523288D3700D2F377 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6574E29323288D3700D2F377 /* AppExtensionDemo */,
+				6574E2DC2328937B00D2F377 /* TodayExtension */,
+				6574E2F82328CB6A00D2F377 /* ShareExtension */,
+				6574E30E2328CF5E00D2F377 /* ActionExtension */,
+				6574E3382328D31900D2F377 /* StickerPackExtension */,
+				6574E34A2328EBB000D2F377 /* NotificationServiceExtension */,
+				6574E35A2328EBD200D2F377 /* NotificationContentExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6574E29223288D3700D2F377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E37D2328FDDD00D2F377 /* logo_img_01@2x.png in Resources */,
+				6574E3792328FDDD00D2F377 /* logo_img_02@3x.png in Resources */,
+				6574E37B2328FDDD00D2F377 /* sound01.wav in Resources */,
+				6574E37C2328FDDD00D2F377 /* sound02.wav in Resources */,
+				6574E37E2328FDDD00D2F377 /* logo_img_01@3x.png in Resources */,
+				6574E37A2328FDDD00D2F377 /* logo_img_02@2x.png in Resources */,
+				6574E2A123288D3800D2F377 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E2DB2328937B00D2F377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E2F72328CB6A00D2F377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E30D2328CF5E00D2F377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E3122328CF5E00D2F377 /* Media.xcassets in Resources */,
+				6574E3182328CF5E00D2F377 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E3372328D31900D2F377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E33C2328D31A00D2F377 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E3492328EBB000D2F377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E3592328EBD200D2F377 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E3662328EBD200D2F377 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6574E29023288D3700D2F377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E29C23288D3700D2F377 /* ViewController.m in Sources */,
+				6574E2A723288D3800D2F377 /* main.m in Sources */,
+				6574E2F42328A37200D2F377 /* LWTodayExtensionViewController.m in Sources */,
+				6574E3702328F71900D2F377 /* LWNotificationViewController.m in Sources */,
+				6574E29923288D3700D2F377 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E2D92328937B00D2F377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E2E42328937B00D2F377 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E2F52328CB6A00D2F377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E2FD2328CB6A00D2F377 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E30B2328CF5E00D2F377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E3152328CF5E00D2F377 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E3472328EBB000D2F377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E34F2328EBB000D2F377 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6574E3572328EBD200D2F377 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6574E3632328EBD200D2F377 /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6574E2EA2328937B00D2F377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6574E2DC2328937B00D2F377 /* TodayExtension */;
+			targetProxy = 6574E2E92328937B00D2F377 /* PBXContainerItemProxy */;
+		};
+		6574E3032328CB6A00D2F377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6574E2F82328CB6A00D2F377 /* ShareExtension */;
+			targetProxy = 6574E3022328CB6A00D2F377 /* PBXContainerItemProxy */;
+		};
+		6574E31B2328CF5F00D2F377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6574E30E2328CF5E00D2F377 /* ActionExtension */;
+			targetProxy = 6574E31A2328CF5F00D2F377 /* PBXContainerItemProxy */;
+		};
+		6574E33F2328D31A00D2F377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6574E3382328D31900D2F377 /* StickerPackExtension */;
+			targetProxy = 6574E33E2328D31A00D2F377 /* PBXContainerItemProxy */;
+		};
+		6574E3522328EBB000D2F377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6574E34A2328EBB000D2F377 /* NotificationServiceExtension */;
+			targetProxy = 6574E3512328EBB000D2F377 /* PBXContainerItemProxy */;
+		};
+		6574E3692328EBD200D2F377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6574E35A2328EBD200D2F377 /* NotificationContentExtension */;
+			targetProxy = 6574E3682328EBD200D2F377 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6574E3162328CF5E00D2F377 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6574E3172328CF5E00D2F377 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		6574E3642328EBD200D2F377 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6574E3652328EBD200D2F377 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6574E2A823288D3800D2F377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6574E2A923288D3800D2F377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6574E2AB23288D3800D2F377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppExtensionDemo/AppExtensionDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = AppExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6574E2AC23288D3800D2F377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppExtensionDemo/AppExtensionDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = AppExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6574E2ED2328937B00D2F377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6574E2EE2328937B00D2F377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6574E3062328CB6A00D2F377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6574E3072328CB6A00D2F377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6574E31E2328CF5F00D2F377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.ActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6574E31F2328CF5F00D2F377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.ActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6574E3422328D31A00D2F377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = StickerPackExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6574E3432328D31A00D2F377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = StickerPackExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6574E3552328EBB000D2F377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6574E3562328EBB000D2F377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6574E36C2328EBD200D2F377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.NotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6574E36D2328EBD200D2F377 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bonc.AppExtensionDemo.NotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6574E28F23288D3700D2F377 /* Build configuration list for PBXProject "AppExtensionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6574E2A823288D3800D2F377 /* Debug */,
+				6574E2A923288D3800D2F377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6574E2AA23288D3800D2F377 /* Build configuration list for PBXNativeTarget "AppExtensionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6574E2AB23288D3800D2F377 /* Debug */,
+				6574E2AC23288D3800D2F377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6574E2EC2328937B00D2F377 /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6574E2ED2328937B00D2F377 /* Debug */,
+				6574E2EE2328937B00D2F377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6574E3052328CB6A00D2F377 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6574E3062328CB6A00D2F377 /* Debug */,
+				6574E3072328CB6A00D2F377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6574E31D2328CF5F00D2F377 /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6574E31E2328CF5F00D2F377 /* Debug */,
+				6574E31F2328CF5F00D2F377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6574E3412328D31A00D2F377 /* Build configuration list for PBXNativeTarget "StickerPackExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6574E3422328D31A00D2F377 /* Debug */,
+				6574E3432328D31A00D2F377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6574E3542328EBB000D2F377 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6574E3552328EBB000D2F377 /* Debug */,
+				6574E3562328EBB000D2F377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6574E36B2328EBD200D2F377 /* Build configuration list for PBXNativeTarget "NotificationContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6574E36C2328EBD200D2F377 /* Debug */,
+				6574E36D2328EBD200D2F377 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6574E28C23288D3700D2F377 /* Project object */;
+}
