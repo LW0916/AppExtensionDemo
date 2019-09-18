@@ -210,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				6574E29623288D3700D2F377 /* AppExtensionDemo */,
+				6574E3722328FDDC00D2F377 /* Resources */,
 				6574E2E12328937B00D2F377 /* TodayExtension */,
 				6574E2FA2328CB6A00D2F377 /* ShareExtension */,
 				6574E3102328CF5E00D2F377 /* ActionExtension */,
@@ -238,14 +239,13 @@
 		6574E29623288D3700D2F377 /* AppExtensionDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6574E3722328FDDC00D2F377 /* Resources */,
 				6574E2F123289E3C00D2F377 /* AppExtensionDemo.entitlements */,
 				6574E29723288D3700D2F377 /* AppDelegate.h */,
 				6574E29823288D3700D2F377 /* AppDelegate.m */,
-				6574E2F22328A37200D2F377 /* LWTodayExtensionViewController.h */,
-				6574E2F32328A37200D2F377 /* LWTodayExtensionViewController.m */,
 				6574E29A23288D3700D2F377 /* ViewController.h */,
 				6574E29B23288D3700D2F377 /* ViewController.m */,
+				6574E2F22328A37200D2F377 /* LWTodayExtensionViewController.h */,
+				6574E2F32328A37200D2F377 /* LWTodayExtensionViewController.m */,
 				6574E36E2328F71900D2F377 /* LWNotificationViewController.h */,
 				6574E36F2328F71900D2F377 /* LWNotificationViewController.m */,
 				6574E2A023288D3800D2F377 /* Assets.xcassets */,
