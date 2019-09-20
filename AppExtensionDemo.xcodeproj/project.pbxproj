@@ -37,6 +37,13 @@
 		6574E37C2328FDDD00D2F377 /* sound02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3762328FDDC00D2F377 /* sound02.wav */; };
 		6574E37D2328FDDD00D2F377 /* logo_img_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3772328FDDC00D2F377 /* logo_img_01@2x.png */; };
 		6574E37E2328FDDD00D2F377 /* logo_img_01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6574E3782328FDDC00D2F377 /* logo_img_01@3x.png */; };
+		65F079882334ACCE0099E087 /* LWUserNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F079872334ACCE0099E087 /* LWUserNotification.m */; };
+		65F079962334BB340099E087 /* test.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65F079902334BB330099E087 /* test.caf */; };
+		65F079972334BB340099E087 /* 超人.gif in Resources */ = {isa = PBXBuildFile; fileRef = 65F079912334BB330099E087 /* 超人.gif */; };
+		65F079982334BB340099E087 /* 赵薇-烟雨蒙蒙.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 65F079922334BB330099E087 /* 赵薇-烟雨蒙蒙.mp3 */; };
+		65F079992334BB340099E087 /* 周笔畅-对嘴.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 65F079932334BB340099E087 /* 周笔畅-对嘴.m4a */; };
+		65F0799A2334BB340099E087 /* hong.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F079942334BB340099E087 /* hong.png */; };
+		65F0799B2334BB340099E087 /* IMG_0723.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 65F079952334BB340099E087 /* IMG_0723.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +162,15 @@
 		6574E3762328FDDC00D2F377 /* sound02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound02.wav; sourceTree = "<group>"; };
 		6574E3772328FDDC00D2F377 /* logo_img_01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_img_01@2x.png"; sourceTree = "<group>"; };
 		6574E3782328FDDC00D2F377 /* logo_img_01@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_img_01@3x.png"; sourceTree = "<group>"; };
+		65F079862334ACCE0099E087 /* LWUserNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWUserNotification.h; sourceTree = "<group>"; };
+		65F079872334ACCE0099E087 /* LWUserNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWUserNotification.m; sourceTree = "<group>"; };
+		65F079892334AD850099E087 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		65F079902334BB330099E087 /* test.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.caf; sourceTree = "<group>"; };
+		65F079912334BB330099E087 /* 超人.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "超人.gif"; sourceTree = "<group>"; };
+		65F079922334BB330099E087 /* 赵薇-烟雨蒙蒙.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "赵薇-烟雨蒙蒙.mp3"; sourceTree = "<group>"; };
+		65F079932334BB340099E087 /* 周笔畅-对嘴.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "周笔畅-对嘴.m4a"; sourceTree = "<group>"; };
+		65F079942334BB340099E087 /* hong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hong.png; sourceTree = "<group>"; };
+		65F079952334BB340099E087 /* IMG_0723.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0723.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +264,9 @@
 				6574E2F32328A37200D2F377 /* LWTodayExtensionViewController.m */,
 				6574E36E2328F71900D2F377 /* LWNotificationViewController.h */,
 				6574E36F2328F71900D2F377 /* LWNotificationViewController.m */,
+				65F079862334ACCE0099E087 /* LWUserNotification.h */,
+				65F079872334ACCE0099E087 /* LWUserNotification.m */,
+				65F079892334AD850099E087 /* Macro.h */,
 				6574E2A023288D3800D2F377 /* Assets.xcassets */,
 				6574E2A523288D3800D2F377 /* Info.plist */,
 				6574E2A623288D3800D2F377 /* main.m */,
@@ -333,6 +352,12 @@
 		6574E3722328FDDC00D2F377 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65F079912334BB330099E087 /* 超人.gif */,
+				65F079922334BB330099E087 /* 赵薇-烟雨蒙蒙.mp3 */,
+				65F079932334BB340099E087 /* 周笔畅-对嘴.m4a */,
+				65F079942334BB340099E087 /* hong.png */,
+				65F079952334BB340099E087 /* IMG_0723.mp4 */,
+				65F079902334BB330099E087 /* test.caf */,
 				6574E3732328FDDC00D2F377 /* logo_img_02@3x.png */,
 				6574E3742328FDDC00D2F377 /* logo_img_02@2x.png */,
 				6574E3752328FDDC00D2F377 /* sound01.wav */,
@@ -546,13 +571,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F079972334BB340099E087 /* 超人.gif in Resources */,
+				65F079962334BB340099E087 /* test.caf in Resources */,
 				6574E37D2328FDDD00D2F377 /* logo_img_01@2x.png in Resources */,
 				6574E3792328FDDD00D2F377 /* logo_img_02@3x.png in Resources */,
 				6574E37B2328FDDD00D2F377 /* sound01.wav in Resources */,
 				6574E37C2328FDDD00D2F377 /* sound02.wav in Resources */,
 				6574E37E2328FDDD00D2F377 /* logo_img_01@3x.png in Resources */,
+				65F079992334BB340099E087 /* 周笔畅-对嘴.m4a in Resources */,
 				6574E37A2328FDDD00D2F377 /* logo_img_02@2x.png in Resources */,
 				6574E2A123288D3800D2F377 /* Assets.xcassets in Resources */,
+				65F079982334BB340099E087 /* 赵薇-烟雨蒙蒙.mp3 in Resources */,
+				65F0799A2334BB340099E087 /* hong.png in Resources */,
+				65F0799B2334BB340099E087 /* IMG_0723.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +640,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65F079882334ACCE0099E087 /* LWUserNotification.m in Sources */,
 				6574E29C23288D3700D2F377 /* ViewController.m in Sources */,
 				6574E2A723288D3800D2F377 /* main.m in Sources */,
 				6574E2F42328A37200D2F377 /* LWTodayExtensionViewController.m in Sources */,

@@ -9,10 +9,9 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "LWTodayExtensionViewController.h"
-#ifdef NSFoundationVersionNumber_iOS_9_x_Max
-#import <UserNotifications/UserNotifications.h>
-#endif
-@interface AppDelegate ()<UNUserNotificationCenterDelegate>
+#import "LWUserNotification.h"
+
+@interface AppDelegate ()
 
 @end
 
@@ -25,7 +24,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
     [self.window makeKeyAndVisible];
-    [self registerLocalNotification];
+    [[LWUserNotification sharedNotification] registerNotification];
     return YES;
 }
 
@@ -66,115 +65,22 @@
 }
 // 获得Device Token
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    // 获取并处理deviceToken
-    NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
-    token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSLog(@"DeviceToken:%@\n", token);
+    [[LWUserNotification sharedNotification] application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 }
 // 获得Device Token失败
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    NSLog(@"did Fail To Register For Remote Notifications With Error: %@", error);
+    [[LWUserNotification sharedNotification] application:application didFailToRegisterForRemoteNotificationsWithError:error];
 }
 // 注：iOS10以上如果不使用UNUserNotificationCenter时，也将走此回调方法
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler{
-    // iOS7及以上系统
-    if (userInfo) {
-        if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive) {
-            NSLog(@"app位于前台通知(didReceiveRemoteNotification:fetchCompletionHandler:):%@", userInfo);
-        } else {
-            NSLog(@"app位于后台通知(didReceiveRemoteNotification:fetchCompletionHandler:):%@", userInfo);
-        }
-    }
-    completionHandler(UIBackgroundFetchResultNewData);
+    [[LWUserNotification sharedNotification] application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
-    
-    NSLog(@"app收到本地推送(didReceiveLocalNotification:):%@", notification.userInfo);
-}
-#pragma mark - iOS>=10 中收到推送消息UNUserNotificationCenterDelegate
-
-#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-//  iOS>=10: app在前台获取到通知
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler API_AVAILABLE(ios(10.0)){
-    NSDictionary * userInfo = notification.request.content.userInfo;
-    UNNotificationRequest *request = notification.request; // 收到推送的请求
-    UNNotificationContent *content = request.content; // 收到推送的消息内容
-    NSNumber *badge = content.badge;  // 推送消息的角标
-    NSString *body = content.body;    // 推送消息体
-    UNNotificationSound *sound = content.sound;  // 推送消息的声音
-    NSString *subtitle = content.subtitle;  // 推送消息的副标题
-    NSString *title = content.title;  // 推送消息的标题
-    if([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
-//        NSLog(@"iOS10 前台收到远程通知:%@", [self logDic:userInfo]);
-        
-    }
-    else {
-        // 判断为本地通知
-        NSLog(@"iOS10 前台收到本地通知:{\\\\nbody:%@，\\\\ntitle:%@,\\\\nsubtitle:%@,\\\\nbadge：%@，\\\\nsound：%@，\\\\nuserInfo：%@\\\\n}",body,title,subtitle,badge,sound,userInfo);
-    }
-    completionHandler(UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound|UNNotificationPresentationOptionAlert); // 需要执行这个方法，选择是否提醒用户，有Badge、Sound、Alert三种类型可以设置
-}
-//  iOS>=10: 点击通知进入app时触发（杀死/切到后台唤起）
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler API_AVAILABLE(ios(10.0)){
-    NSDictionary * userInfo = response.notification.request.content.userInfo;
-    UNNotificationRequest *request = response.notification.request; // 收到推送的请求
-    UNNotificationContent *content = request.content; // 收到推送的消息内容
-    NSNumber *badge = content.badge;  // 推送消息的角标
-    NSString *body = content.body;    // 推送消息体
-    UNNotificationSound *sound = content.sound;  // 推送消息的声音
-    NSString *subtitle = content.subtitle;  // 推送消息的副标题
-    NSString *title = content.title;  // 推送消息的标题
-    if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
-//        NSLog(@"iOS10 收到远程通知:%@", [self logDic:userInfo]);
-        
-    }else {
-        // 判断为本地通知
-        NSLog(@"iOS10 收到本地通知:{\\\\nbody:%@，\\\\ntitle:%@,\\\\nsubtitle:%@,\\\\nbadge：%@，\\\\nsound：%@，\\\\nuserInfo：%@\\\\n}",body,title,subtitle,badge,sound,userInfo);
-    }
-    // Warning: UNUserNotificationCenter delegate received call to -userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler: but the completion handler was never called.
-    completionHandler();  // 系统要求执行这个方法
-    
-}
-#endif
-
-- (void)registerLocalNotification {
-    
-    if (@available(iOS 10.0, *)) {
-        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        center.delegate = self;
-        [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert) completionHandler:^(BOOL granted, NSError * _Nullable error) {
-            if (!error) {
-                NSLog(@"request authorization succeeded!");
-            }
-        }];
-    } else {
-        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
-        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
-    }
+    [[LWUserNotification sharedNotification] application:application didReceiveLocalNotification:notification];
 }
 
 
-- (void)registerRemoteNotifications
-{
-    if (@available(iOS 10.0, *)) {
-        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        center.delegate = self;
-        [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionCarPlay) completionHandler:^(BOOL granted, NSError *_Nullable error) {
-            if (!error) {
-                NSLog(@"request authorization succeeded!");
-                [[UIApplication sharedApplication] registerForRemoteNotifications];
-            } else {
-                NSLog(@"request authorization failed!");
-            }
-        }];
-    } else {
-        UIUserNotificationType types = (UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge);
-        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:types categories:nil];
-        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
-        [[UIApplication sharedApplication] registerForRemoteNotifications];
-    }
-}
 - (NSDictionary*)fm_QueryDictionaryWithQuery:(NSString *)queryStr {
     NSMutableDictionary *mute = [[NSMutableDictionary alloc] init];
     for (NSString *query in [queryStr componentsSeparatedByString:@"&"]) {
@@ -201,5 +107,4 @@
     }
     return mute.count ? mute.copy : nil;
 }
-
 @end
