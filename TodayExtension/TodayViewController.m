@@ -77,7 +77,7 @@
     NSMutableArray *array = [[NSMutableArray alloc]init];
     for (int i=0 ; i<8; i++) {
         int x = arc4random() % 100;
-        NSString *userName = [[[NSUserDefaults alloc] initWithSuiteName:@"group.MobilePortalExtension"] valueForKey:@"userName"];
+        NSString *userName = [[[NSUserDefaults alloc] initWithSuiteName:@"com.bonc.appextension.TodayExtension"] valueForKey:@"userName"];
         NSString *str = [NSString stringWithFormat:@"%@ 列表%d",userName,x];
         [array addObject:str];
     }

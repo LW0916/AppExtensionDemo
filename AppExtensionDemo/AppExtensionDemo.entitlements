@@ -4,7 +4,12 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.MobilePortalExtension</string>
+		<string>group.com.bonc.appextension.ActionExtension</string>
+		<string>group.com.bonc.appextension.NotificationContentExtension</string>
+		<string>group.com.bonc.appextension.NotificationServiceExtension</string>
+		<string>group.com.bonc.appextension.ShareExtension</string>
+		<string>group.com.bonc.appextension.StickerPackExtension</string>
+		<string>group.com.bonc.appextension.TodayExtension</string>
 	</array>
 </dict>
 </plist>

@@ -16,7 +16,7 @@
 @implementation ViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSUserDefaults *mySharedDefaults = [[NSUserDefaults alloc] initWithSuiteName: @"group.MobilePortalExtension"];
+    NSUserDefaults *mySharedDefaults = [[NSUserDefaults alloc] initWithSuiteName: @"com.bonc.appextension.TodayExtension"];
     [mySharedDefaults setObject:@"林伟" forKey:@"userName"];
     [mySharedDefaults synchronize];
     self.navigationItem.title = @"首页";
