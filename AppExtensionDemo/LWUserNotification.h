@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 MInterfaceSharedInstance(sharedNotification)
 
-- (void)registerNotification;
+- (void)registerNotificationWithOptions:(NSDictionary *)launchOptions;
 - (void)cancelLocalNotificaitons;
 
 #pragma mark - 本地-附件

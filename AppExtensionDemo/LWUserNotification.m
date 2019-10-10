@@ -9,9 +9,12 @@
 #import "LWUserNotification.h"
 #import <CoreLocation/CoreLocation.h>
 #import "AppDelegate.h"
+#import "JPUSHService.h"
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 #endif
+
+NSString * const appKey = @"aa0896c8ffdcdbe7c51ff797";
 
 #define LocalNotiReqIdentifer    @"LocalNotiReqIdentifer"
 
@@ -35,7 +38,7 @@ MImplementeSharedInstance(sharedNotification)
     }
     return self;
 }
-- (void)registerNotification
+- (void)registerNotificationWithOptions:(NSDictionary *)launchOptions
 {
     if (@available(iOS 10.0, *)) {
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
@@ -60,6 +63,10 @@ MImplementeSharedInstance(sharedNotification)
            UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
            [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
        }
+    // 远程推送
+    [JPUSHService setupWithOption:launchOptions appKey:appKey
+                          channel:@"test"
+                 apsForProduction:YES];
 }
 - (void)cancelLocalNotificaitons{
         //! 取消一个特定的通知
@@ -183,6 +190,8 @@ MImplementeSharedInstance(sharedNotification)
 // 获得Device Token
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // 获取并处理deviceToken
+    [JPUSHService registerDeviceToken:deviceToken];
+    
     NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
     NSLog(@"DeviceToken:%@\n", token);

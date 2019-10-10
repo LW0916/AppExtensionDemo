@@ -24,7 +24,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[ViewController alloc]init]];
     [self.window makeKeyAndVisible];
-    [[LWUserNotification sharedNotification] registerNotification];
+    [[LWUserNotification sharedNotification] registerNotificationWithOptions:launchOptions];
     return YES;
 }
 
